@@ -1,7 +1,7 @@
 {
   "name": "electron-typescript-app",
   "version": "1.0.0",
-  "description": "Electron app with TypeScript, Webpack and Yarn",
+  "description": "Electron app with TypeScript, Webpack, Yarn and React",
   "main": "dist/main/main.js",
   "scripts": {
     "build": "webpack --mode=production",
@@ -16,12 +16,15 @@
     "electron",
     "typescript",
     "webpack",
-    "yarn"
+    "yarn",
+    "react"
   ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "concurrently": "^8.0.0",
@@ -38,5 +41,8 @@
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
 }

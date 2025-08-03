@@ -1,11 +1,12 @@
-# Electron TypeScript App
+# Electron TypeScript React App
 
-A modern Electron application built with TypeScript, Webpack, and Yarn.
+A modern Electron application built with TypeScript, Webpack, Yarn, and React.
 
 ## Features
 
 - ⚡ **Electron** - Cross-platform desktop app framework
 - 🔷 **TypeScript** - Type-safe JavaScript development
+- ⚛️ **React** - Modern UI library with hooks and components
 - 📦 **Webpack** - Module bundler and build tool
 - 🧶 **Yarn** - Fast, reliable package manager
 - 🎨 **Modern UI** - Clean and responsive interface
@@ -19,8 +20,12 @@ A modern Electron application built with TypeScript, Webpack, and Yarn.
 │   ├── main/           # Main process (Electron)
 │   │   └── main.ts
 │   └── renderer/       # Renderer process (UI)
+│       ├── components/ # React components
+│       │   ├── App.tsx
+│       │   ├── SystemInfo.tsx
+│       │   └── MessageSection.tsx
 │       ├── index.html
-│       ├── renderer.ts
+│       ├── renderer.tsx
 │       ├── preload.ts
 │       └── styles.css
 ├── dist/               # Build output

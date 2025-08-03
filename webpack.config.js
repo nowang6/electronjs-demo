@@ -33,13 +33,13 @@ const mainConfig = {
 
 const rendererConfig = {
   mode: isDevelopment ? 'development' : 'production',
-  entry: './src/renderer/renderer.ts',
+  entry: './src/renderer/renderer.tsx',
   target: 'electron-renderer',
   devtool: isDevelopment ? 'source-map' : false,
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.(ts|tsx)$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
@@ -50,7 +50,7 @@ const rendererConfig = {
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   output: {
     path: path.resolve(__dirname, 'dist/renderer'),
